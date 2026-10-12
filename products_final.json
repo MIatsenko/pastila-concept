@@ -1,0 +1,394 @@
+[
+ {
+  "id": 22,
+  "type": "Пастила",
+  "name": "С черникой",
+  "weight": "180 г",
+  "badges": [
+   "Без сахара"
+  ],
+  "img": "assets/img/p22.png"
+ },
+ {
+  "id": 23,
+  "type": "Пастила",
+  "name": "Классическая",
+  "weight": "100 г",
+  "badges": [
+   "Без сахара"
+  ],
+  "img": "assets/img/p23.jpg"
+ },
+ {
+  "id": 49,
+  "type": "Пастила",
+  "name": "В подарочной упаковке",
+  "weight": "200 г",
+  "badges": [
+   "Подарок"
+  ],
+  "img": "assets/img/p49.jpg"
+ },
+ {
+  "id": 50,
+  "type": "Пастила",
+  "name": "Брусника",
+  "weight": "200 г",
+  "badges": [],
+  "img": "assets/img/p50.jpg"
+ },
+ {
+  "id": 51,
+  "type": "Пастила",
+  "name": "Вишня",
+  "weight": "200 г",
+  "badges": [],
+  "img": "assets/img/p51.jpg"
+ },
+ {
+  "id": 52,
+  "type": "Пастила",
+  "name": "Кедровый орех",
+  "weight": "200 г",
+  "badges": [],
+  "img": "assets/img/p52.jpg"
+ },
+ {
+  "id": 53,
+  "type": "Пастила",
+  "name": "Классическая",
+  "weight": "200 г",
+  "badges": [],
+  "img": "assets/img/p53.jpg"
+ },
+ {
+  "id": 54,
+  "type": "Пастила",
+  "name": "Клюква",
+  "weight": "200 г",
+  "badges": [],
+  "img": "assets/img/p54.jpg"
+ },
+ {
+  "id": 56,
+  "type": "Пастила",
+  "name": "Чёрная смородина",
+  "weight": "200 г",
+  "badges": [],
+  "img": "assets/img/p56.jpg"
+ },
+ {
+  "id": 57,
+  "type": "Пастила",
+  "name": "Черника",
+  "weight": "200 г",
+  "badges": [],
+  "img": "assets/img/p57.jpg"
+ },
+ {
+  "id": 85,
+  "type": "Пастила",
+  "name": "Яблочная постная",
+  "weight": "",
+  "badges": [],
+  "img": "assets/img/p85.png"
+ },
+ {
+  "id": 86,
+  "type": "Пастила",
+  "name": "С алтайским мёдом",
+  "weight": "",
+  "badges": [],
+  "img": "assets/img/p86.jpg"
+ },
+ {
+  "id": 87,
+  "type": "Пастила",
+  "name": "С башкирским мёдом",
+  "weight": "",
+  "badges": [],
+  "img": "assets/img/p87.jpg"
+ },
+ {
+  "id": 94,
+  "type": "Пастила",
+  "name": "С дикой голубикой",
+  "weight": "",
+  "badges": [
+   "Дикие ягоды"
+  ],
+  "img": "assets/img/p94.jpg"
+ },
+ {
+  "id": 95,
+  "type": "Пастила",
+  "name": "С дикой клюквой",
+  "weight": "",
+  "badges": [
+   "Дикие ягоды"
+  ],
+  "img": "assets/img/p95.jpg"
+ },
+ {
+  "id": 96,
+  "type": "Пастила",
+  "name": "С дикой шикшей",
+  "weight": "",
+  "badges": [
+   "Дикие ягоды"
+  ],
+  "img": "assets/img/p96.jpg"
+ },
+ {
+  "id": 97,
+  "type": "Пастила",
+  "name": "С брусникой",
+  "weight": "100 г",
+  "badges": [
+   "Без сахара"
+  ],
+  "img": "assets/img/p97.jpg"
+ },
+ {
+  "id": 98,
+  "type": "Пастила",
+  "name": "С вишней",
+  "weight": "100 г",
+  "badges": [
+   "Без сахара"
+  ],
+  "img": "assets/img/p98.jpg"
+ },
+ {
+  "id": 99,
+  "type": "Пастила",
+  "name": "Ягодное ассорти",
+  "weight": "100 г",
+  "badges": [
+   "Без сахара"
+  ],
+  "img": "assets/img/p99.jpg"
+ },
+ {
+  "id": 100,
+  "type": "Пастила",
+  "name": "С чёрной смородиной",
+  "weight": "100 г",
+  "badges": [
+   "Без сахара"
+  ],
+  "img": "assets/img/p100.jpg"
+ },
+ {
+  "id": 32,
+  "type": "Зефир",
+  "name": "Черносмородиновый",
+  "weight": "",
+  "badges": [],
+  "img": "assets/img/p32.jpg"
+ },
+ {
+  "id": 46,
+  "type": "Зефир",
+  "name": "Ванильный",
+  "weight": "",
+  "badges": [],
+  "img": "assets/img/p46.jpg"
+ },
+ {
+  "id": 71,
+  "type": "Зефир",
+  "name": "Ванильный",
+  "weight": "",
+  "badges": [
+   "В глазури"
+  ],
+  "img": "assets/img/p71.png"
+ },
+ {
+  "id": 72,
+  "type": "Зефир",
+  "name": "Антоновка",
+  "weight": "",
+  "badges": [
+   "В глазури"
+  ],
+  "img": "assets/img/p72.png"
+ },
+ {
+  "id": 91,
+  "type": "Зефир",
+  "name": "Антоновка",
+  "weight": "",
+  "badges": [],
+  "img": "assets/img/p91.JPG"
+ },
+ {
+  "id": 93,
+  "type": "Зефир",
+  "name": "Ассорти",
+  "weight": "",
+  "badges": [],
+  "img": "assets/img/p93.JPG"
+ },
+ {
+  "id": 39,
+  "type": "Смоква",
+  "name": "Яблочная",
+  "weight": "",
+  "badges": [
+   "Без сахара"
+  ],
+  "img": "assets/img/p39.jpg"
+ },
+ {
+  "id": 40,
+  "type": "Смоква",
+  "name": "Яблочно-абрикосовая",
+  "weight": "",
+  "badges": [
+   "Без сахара"
+  ],
+  "img": "assets/img/p40.jpg"
+ },
+ {
+  "id": 41,
+  "type": "Смоква",
+  "name": "Яблочно-сливовая",
+  "weight": "",
+  "badges": [
+   "Без сахара"
+  ],
+  "img": "assets/img/p41.jpg"
+ },
+ {
+  "id": 66,
+  "type": "Смоква",
+  "name": "Брусничная",
+  "weight": "",
+  "badges": [
+   "Без сахара"
+  ],
+  "img": "assets/img/p66.jpg"
+ },
+ {
+  "id": 67,
+  "type": "Смоква",
+  "name": "Клюквенная",
+  "weight": "",
+  "badges": [
+   "Без сахара"
+  ],
+  "img": "assets/img/p67.jpg"
+ },
+ {
+  "id": 74,
+  "type": "Смоква",
+  "name": "Яблочно-тыквенная",
+  "weight": "",
+  "badges": [
+   "Без сахара",
+   "Новинка"
+  ],
+  "img": "assets/img/p74.jpg"
+ },
+ {
+  "id": 75,
+  "type": "Смоква",
+  "name": "Яблочно-облепиховая",
+  "weight": "",
+  "badges": [
+   "Без сахара",
+   "Новинка"
+  ],
+  "img": "assets/img/p75.jpg"
+ },
+ {
+  "id": 109,
+  "type": "Пастилки",
+  "name": "Ягодное ассорти",
+  "weight": "",
+  "badges": [],
+  "img": "assets/img/p109.png"
+ },
+ {
+  "id": 113,
+  "type": "Пастилки",
+  "name": "Яблочная",
+  "weight": "",
+  "badges": [],
+  "img": "assets/img/p113.png"
+ },
+ {
+  "id": 115,
+  "type": "Меренга",
+  "name": "Ягодное ассорти",
+  "weight": "",
+  "badges": [
+   "Без сахара"
+  ],
+  "img": "assets/img/p115.jpg"
+ },
+ {
+  "id": 117,
+  "type": "Меренга",
+  "name": "Классическая",
+  "weight": "",
+  "badges": [
+   "Без сахара"
+  ],
+  "img": "assets/img/p117.jpg"
+ },
+ {
+  "id": 42,
+  "type": "Сухарики",
+  "name": "Классические",
+  "weight": "",
+  "badges": [],
+  "img": "assets/img/p42.jpg"
+ },
+ {
+  "id": 43,
+  "type": "Сухарики",
+  "name": "С брусникой",
+  "weight": "",
+  "badges": [],
+  "img": "assets/img/p43.jpg"
+ },
+ {
+  "id": 44,
+  "type": "Сухарики",
+  "name": "С клюквой",
+  "weight": "",
+  "badges": [],
+  "img": "assets/img/p44.jpg"
+ },
+ {
+  "id": 45,
+  "type": "Сухарики",
+  "name": "С черникой",
+  "weight": "",
+  "badges": [],
+  "img": "assets/img/p45.jpg"
+ },
+ {
+  "id": 119,
+  "type": "Батончики",
+  "name": "Ягодный",
+  "weight": "35 г",
+  "badges": [
+   "Без сахара"
+  ],
+  "img": "assets/img/p119.png"
+ },
+ {
+  "id": 120,
+  "type": "Батончики",
+  "name": "Яблочный",
+  "weight": "35 г",
+  "badges": [
+   "Без сахара"
+  ],
+  "img": "assets/img/p120.png"
+ }
+]

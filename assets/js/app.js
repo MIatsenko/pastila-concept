@@ -20,34 +20,39 @@
     tabs.forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
     const f = btn.dataset.filter;
     cards.forEach(c => {
-      const show = f === '*' || c.dataset.cat === f;
+      const show = f === '*' || (f === '__sugar' ? c.dataset.sugar === '1' : c.dataset.cat === f);
       c.hidden = !show;
       if (show) { c.classList.remove('in'); requestAnimationFrame(() => c.classList.add('in')); }
     });
   }));
 
+  /* --- кнопка «Показать без сахара» в блоке про сахар --- */
+  document.querySelector('[data-sugar-link]')?.addEventListener('click', () => {
+    document.querySelector('#tabs .tab-sugar')?.click();
+  });
+
   /* --- смена языка (рабочий пример для RU/EN) --- */
   const T = {
     ru: {
-      nav_history: 'История', nav_catalog: 'Каталог', nav_awards: 'Награды',
+      nav_history: 'Производство', nav_catalog: 'Продукция', nav_awards: 'Награды',
       nav_buy: 'Где купить', nav_b2b: 'Опт и СТМ', nav_contacts: 'Контакты',
       hero_h1: 'Пастила, которую варят в печи XIX века',
       hero_p: 'Белёвская пастила создаётся исключительно вручную из сочных антоновских яблок по неизменной технологии: нежнейшее яблочное пюре, яичный белок и цельные ягоды, орехи или корица. Мастера по сей день готовят её в русской печи, построенной в XIX веке.',
-      hero_cta1: 'Смотреть каталог', hero_cta2: 'Опт и СТМ',
-      cat_eyebrow: 'Каталог', cat_h2: 'Линейки мануфактуры',
-      cat_lead: 'Пастила классическая и без добавления сахара, с дикими ягодами, зефир, смоква, пастилки, яблочная меренга и сухарики. Ниже — реальные позиции ассортимента с фотографиями производителя.',
-      hist_eyebrow: 'Традиция', hist_h2: 'Рецепт, которому 145 лет',
+      hero_cta1: 'Смотреть продукцию', hero_cta2: 'Опт и СТМ',
+      cat_eyebrow: 'Продукция', cat_h2: 'Ассортимент мануфактуры',
+      cat_lead: 'Разделено по типам продукта — пастила, зефир, смоква, пастилки, меренга, сухарики, батончики. Важное при выборе вынесено в метки: «Без сахара», «Новинка», «Дикие ягоды». Ниже — реальные позиции с фотографиями производителя.',
+      hist_eyebrow: 'Производство', hist_h2: 'Рецепт, которому 145 лет',
       aw_eyebrow: 'Признание', aw_h2: 'Награды и качество'
     },
     en: {
-      nav_history: 'Heritage', nav_catalog: 'Catalogue', nav_awards: 'Awards',
+      nav_history: 'Production', nav_catalog: 'Products', nav_awards: 'Awards',
       nav_buy: 'Where to buy', nav_b2b: 'Wholesale & OEM', nav_contacts: 'Contacts',
       hero_h1: 'Pastila made in a 19th-century Russian stove',
       hero_p: 'Belev pastila is made entirely by hand from juicy Antonovka apples, following an unchanged recipe: the finest apple puree, egg white and whole berries, nuts or cinnamon. To this day the craftsmen dry it in the Russian stove built in the 19th century.',
-      hero_cta1: 'Browse the catalogue', hero_cta2: 'Wholesale & OEM',
-      cat_eyebrow: 'Catalogue', cat_h2: 'The manufactory ranges',
-      cat_lead: 'Classic pastila and pastila with no added sugar, wild berries, zefir, smokva, pastilles, apple meringue and rusks. Below — real products with the maker\u2019s own photography.',
-      hist_eyebrow: 'Heritage', hist_h2: 'A recipe that is 145 years old',
+      hero_cta1: 'Browse products', hero_cta2: 'Wholesale & OEM',
+      cat_eyebrow: 'Products', cat_h2: 'The manufactory range',
+      cat_lead: 'Grouped by product type: pastila, zefir, smokva, pastilles, meringue, rusks and bars. What matters at a glance is shown as labels: no added sugar, new, wild berries. Below — real products with the maker\u2019s own photography.',
+      hist_eyebrow: 'Production', hist_h2: 'A recipe that is 145 years old',
       aw_eyebrow: 'Recognition', aw_h2: 'Awards and quality'
     }
   };
