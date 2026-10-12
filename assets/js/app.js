@@ -18,13 +18,25 @@
   const tabs = $$('#tabs button'), cards = $$('#cards .card');
   tabs.forEach(btn => btn.addEventListener('click', () => {
     tabs.forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
-    const f = btn.dataset.filter;
+    applyFilter(btn.dataset.filter);
+  }));
+
+  function applyFilter(f) {
     cards.forEach(c => {
       const show = f === '*' || (f === '__sugar' ? c.dataset.sugar === '1' : c.dataset.cat === f);
+      c.classList.toggle('is-hidden', !show);
       c.hidden = !show;
       if (show) { c.classList.remove('in'); requestAnimationFrame(() => c.classList.add('in')); }
     });
-  }));
+  }
+
+  /* фильтр можно открыть ссылкой: ?filter=Зефир или ?filter=__sugar — удобно
+     показывать заказчику конкретную линейку и проверять вид без кликов */
+  const preset = new URLSearchParams(location.search).get('filter');
+  if (preset) {
+    const btn = [...tabs].find(b => b.dataset.filter === preset);
+    if (btn) { tabs.forEach(b => b.setAttribute('aria-pressed', String(b === btn))); applyFilter(preset); }
+  }
 
   /* --- кнопка «Показать без сахара» в блоке про сахар --- */
   document.querySelector('[data-sugar-link]')?.addEventListener('click', () => {

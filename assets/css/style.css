@@ -12,6 +12,7 @@
   --maxw:1180px;
 }
 *,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none !important}
 html{scroll-behavior:smooth; -webkit-text-size-adjust:100%}
 body{margin:0; background:var(--cream); color:var(--ink); font-family:var(--sans);
   font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased}
@@ -38,13 +39,15 @@ p{margin:0 0 1em}
 .topbar{background:var(--ink); color:#E8D9C4; font-size:.8rem}
 .topbar .wrap{display:flex; justify-content:space-between; align-items:center; gap:1rem; min-height:38px; flex-wrap:wrap}
 .topbar a{color:#F1E5D2} .topbar .sep{opacity:.4; margin:0 .5rem}
-header.site{position:sticky; top:0; z-index:60; background:rgba(250,244,234,.9);
+header.site{position:sticky; top:0; z-index:60; background:rgba(250,244,234,.94);
+  -webkit-backdrop-filter:saturate(1.4) blur(14px);
   backdrop-filter:saturate(1.4) blur(14px); border-bottom:1px solid var(--line)}
 .nav{display:flex; align-items:center; justify-content:space-between; gap:1rem; min-height:74px}
 .brand{display:flex; align-items:center; gap:.7rem}
 .brand .mark{width:40px; height:40px; border-radius:50%; background:var(--ink); color:#F3E4CB;
   display:grid; place-items:center; font-family:var(--serif); font-size:1.15rem; flex:none}
-.brand b{display:block; font-family:var(--serif); font-size:1.16rem; line-height:1.1; letter-spacing:.2px}
+.brand b{display:block; font-family:var(--serif); font-size:1.16rem; line-height:1.12;
+  letter-spacing:.1px; text-transform:none}
 .brand span{display:block; font-size:.7rem; letter-spacing:.18em; text-transform:uppercase; color:var(--muted)}
 .menu{display:flex; align-items:center; gap:1.5rem}
 .menu a{font-size:.92rem; color:var(--ink-soft); padding:.3rem 0; border-bottom:1px solid transparent}
@@ -118,6 +121,7 @@ section[id],.hero[id]{scroll-margin-top:92px}
 .cards{display:grid; grid-template-columns:repeat(4,1fr); gap:1.3rem}
 .card{background:#fff; border:1px solid var(--line); border-radius:var(--r); overflow:hidden;
   display:flex; flex-direction:column; transition:.25s}
+.card.is-hidden{display:none}
 .card:hover{transform:translateY(-5px); box-shadow:var(--shadow)}
 .card .ph{aspect-ratio:1/1; background:#fff; display:grid; place-items:center; padding:1rem; border-bottom:1px solid var(--line)}
 .card .ph img{max-height:100%; width:auto; object-fit:contain; transition:.35s}
@@ -173,7 +177,7 @@ footer h4{color:#F1E3CF; font-size:1rem; margin-bottom:.7rem; font-family:var(--
   display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; font-size:.78rem; color:#9E8C77}
 
 /* ---------- демо-плашка ---------- */
-.demo-note{position:fixed; left:50%; bottom:16px; transform:translateX(-50%); z-index:80;
+.demo-note{position:fixed; left:50%; bottom:16px; transform:translateX(-50%); z-index:80; max-width:calc(100% - 32px);
   background:rgba(42,29,20,.92); color:#F3E4CB; font-size:.78rem; padding:.55rem 1rem; border-radius:100px;
   box-shadow:var(--shadow-lg); display:flex; gap:.55rem; align-items:center; backdrop-filter:blur(8px)}
 .demo-note b{color:#fff} .demo-note button{background:none; border:0; color:#CBB89F; cursor:pointer; font:inherit; padding:0 .2rem}
@@ -205,16 +209,15 @@ footer h4{color:#F1E3CF; font-size:1rem; margin-bottom:.7rem; font-family:var(--
   .cards{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:600px){
-  /* фильтры — прокручиваемая лента вместо трёх строк */
-  .tabs{flex-wrap:nowrap; overflow-x:auto; gap:.45rem; margin:1.6rem 0 1.8rem;
-    padding-bottom:.5rem; scrollbar-width:none; -webkit-overflow-scrolling:touch}
-  .tabs::-webkit-scrollbar{display:none}
-  .tabs button{flex:0 0 auto}
+  /* фильтры переносим по строкам: кнопка, уехавшая за край экрана, не нажимается */
+  .tabs{gap:.4rem; margin:1.6rem 0 1.8rem}
+  .tabs button{padding:.5rem .85rem; font-size:.8rem}
 
   /* компактная шапка: слоган скрыт, марка меньше, топбар — только телефон и часы */
   .tb-note,.tb-mail,.tb-eu,.topbar .sep:not(.sep-h){display:none}
   .topbar .wrap{min-height:32px; justify-content:center; font-size:.76rem}
   .nav{min-height:64px}
+  header.site{background:var(--cream)}
   .brand{gap:.55rem}
   .brand > span > span{display:none}
   .brand b{font-size:1rem; line-height:1.15}
