@@ -18,6 +18,7 @@ body{margin:0; background:var(--cream); color:var(--ink); font-family:var(--sans
   font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased}
 img{max-width:100%; display:block}
 a{color:inherit; text-decoration:none}
+:focus-visible{outline:2px solid var(--apple); outline-offset:2px; border-radius:6px}
 h1,h2,h3,h4{font-family:var(--serif); font-weight:600; line-height:1.12; margin:0}
 h1{font-size:clamp(2.2rem,6vw,4.2rem); letter-spacing:-.5px}
 h2{font-size:clamp(1.7rem,4.2vw,2.9rem); letter-spacing:-.3px}
@@ -104,6 +105,16 @@ section[id],.hero[id]{scroll-margin-top:92px}
 .step h3{font-size:1.06rem; margin-bottom:.4rem} .step p{font-size:.9rem; color:var(--muted); margin:0}
 
 /* ---------- каталог ---------- */
+/* фильтры: тип продукта и метки — двумя группами, плюс счётчик найденного */
+.filters{display:grid; gap:1.1rem; margin:1.8rem 0 2rem}
+.fgroup{display:grid; gap:.5rem}
+.fg-cap{font-size:.68rem; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); font-weight:600}
+.filters .tabs{margin:0}
+.fresult{margin:0; font-size:.86rem; color:var(--muted); display:flex; align-items:center; gap:.6rem; flex-wrap:wrap}
+.fresult b{color:var(--ink)}
+#reset{border:1px solid var(--line); background:#fff; border-radius:100px; padding:.28rem .75rem;
+  font:inherit; font-size:.76rem; color:var(--terra); cursor:pointer}
+#reset:hover{border-color:var(--terra)}
 .tabs{display:flex; gap:.5rem; flex-wrap:wrap; margin:2rem 0 2.2rem}
 .tabs button{border:1px solid var(--line); background:#fff; border-radius:100px; padding:.55rem 1.05rem;
   font:inherit; font-size:.84rem; font-weight:500; color:var(--ink-soft); cursor:pointer; transition:.2s}
@@ -212,7 +223,8 @@ footer h4{color:#F1E3CF; font-size:1rem; margin-bottom:.7rem; font-family:var(--
 @media (max-width:600px){
   /* фильтры переносим по строкам: кнопка, уехавшая за край экрана, не нажимается */
   .tabs{gap:.4rem; margin:1.6rem 0 1.8rem}
-  .tabs button{padding:.5rem .85rem; font-size:.8rem}
+  .tabs button{padding:.6rem .9rem; font-size:.82rem}
+  #reset{padding:.45rem .85rem}
 
   /* компактная шапка: слоган скрыт, марка меньше, топбар — только телефон и часы */
   .tb-note,.tb-mail,.tb-eu,.topbar .sep:not(.sep-h){display:none}

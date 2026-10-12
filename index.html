@@ -58,7 +58,7 @@
     <div class="badges">
       <div><b>1881</b>год основания</div>
       <div><b>145</b>лет традиции</div>
-      <div><b>58</b>позиций ассортимента</div>
+      <div><b>51</b>позиция в каталоге</div>
       <div><b>100+</b>магазинов в Москве</div>
     </div>
   </div>
@@ -67,7 +67,7 @@
 <div class="strip"><div class="wrap">
   <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5E7A3A" stroke-width="1.8"><path d="M12 3v18M5 8l7-5 7 5"/><path d="M5 8v8l7 5 7-5V8"/></svg> Ручная работа в русской печи</div>
   <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5E7A3A" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg> Антоновские яблоки</div>
-  <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5E7A3A" stroke-width="1.8"><path d="M4 20h16M6 20V9l6-5 6 5v11"/></svg> Производство в Белёве, Тульская область</div>
+  <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5E7A3A" stroke-width="1.8"><path d="M4 20h16M6 20V9l6-5 6 5v11"/></svg> Производство в Белёве</div>
   <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5E7A3A" stroke-width="1.8"><path d="M12 3l2.6 5.6 6.1.8-4.4 4.3 1.1 6.1L12 17l-5.4 3 1.1-6.1L3.3 9.4l6.1-.8z"/></svg> Superior Taste Award</div>
 </div></div>
 
@@ -75,10 +75,30 @@
   <div class="wrap">
     <div class="eyebrow" data-i18n="cat_eyebrow">Продукция</div>
     <h2 data-i18n="cat_h2">Ассортимент мануфактуры</h2>
-    <p class="lead" data-i18n="cat_lead">Разделено по типам продукта — пастила, зефир, смоква, пастилки, меренга, сухарики, батончики. Важное при выборе вынесено в метки: «Без сахара», «Новинка», «Дикие ягоды».</p>
-    <div class="tabs" id="tabs"><button data-filter="*" aria-pressed="true">Всё</button><button data-filter="Пастила" aria-pressed="false">Пастила</button><button data-filter="Зефир" aria-pressed="false">Зефир</button><button data-filter="Смоква" aria-pressed="false">Смоква</button><button data-filter="Пастилки" aria-pressed="false">Пастилки</button><button data-filter="Меренга" aria-pressed="false">Меренга</button><button data-filter="Сухарики" aria-pressed="false">Сухарики</button><button data-filter="Батончики" aria-pressed="false">Батончики</button><button data-filter="__sugar" aria-pressed="false" class="tab-sugar">Без сахара</button></div>
+    <p class="lead" data-i18n="cat_lead">Ассортимент разделён по типу продукта, а свойства вынесены в отдельные метки — их можно включать как фильтр: без сахара, новинки, дикие ягоды, в глазури, подарочная упаковка.</p>
+    <div class="filters">
+      <div class="fgroup">
+        <span class="fg-cap">Тип продукта</span>
+        <div class="tabs" id="tabs-type"><button data-type="*" aria-pressed="true">Всё</button><button data-type="Пастила" aria-pressed="false">Пастила</button><button data-type="Зефир" aria-pressed="false">Зефир</button><button data-type="Смоква" aria-pressed="false">Смоква</button><button data-type="Пастилки" aria-pressed="false">Пастилки</button><button data-type="Меренга" aria-pressed="false">Меренга</button><button data-type="Сухарики" aria-pressed="false">Сухарики</button><button data-type="Батончики" aria-pressed="false">Батончики</button></div>
+      </div>
+      <div class="fgroup">
+        <span class="fg-cap">Метки</span>
+        <div class="tabs" id="tabs-tag"><button data-tag="Без сахара" aria-pressed="false" class="tab-sugar">Без сахара</button><button data-tag="Новинка" aria-pressed="false" class="">Новинка</button><button data-tag="Дикие ягоды" aria-pressed="false" class="">Дикие ягоды</button><button data-tag="В глазури" aria-pressed="false" class="">В глазури</button><button data-tag="Подарок" aria-pressed="false" class="">Подарок</button></div>
+      </div>
+      <p class="fresult">Показано <b id="found">51</b> <span id="foundWord">позиция</span>
+        <button id="reset" hidden>сбросить</button></p>
+    </div>
     <div class="cards" id="cards">
-      <article class="card reveal" data-cat="Пастила" data-sugar="1">
+      <article class="card reveal" data-cat="Пастила" data-tags="Без сахара" data-sugar="1">
+        <div class="ph"><img src="assets/img/p21.png" alt="Пастила С чёрной смородиной"></div>
+        <div class="body">
+          <span class="chip">Пастила</span>
+          <h3>С чёрной смородиной</h3>
+          <div class="tags"><span class="tag tag-sugar">Без сахара</span></div>
+          <div class="row"><span class="weight">180 г</span><a class="more" href="#contacts">Запросить</a></div>
+        </div>
+      </article>
+      <article class="card reveal" data-cat="Пастила" data-tags="Без сахара" data-sugar="1">
         <div class="ph"><img src="assets/img/p22.png" alt="Пастила С черникой"></div>
         <div class="body">
           <span class="chip">Пастила</span>
@@ -87,7 +107,7 @@
           <div class="row"><span class="weight">180 г</span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Пастила" data-sugar="1">
+      <article class="card reveal" data-cat="Пастила" data-tags="Без сахара" data-sugar="1">
         <div class="ph"><img src="assets/img/p23.jpg" alt="Пастила Классическая"></div>
         <div class="body">
           <span class="chip">Пастила</span>
@@ -96,7 +116,16 @@
           <div class="row"><span class="weight">100 г</span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Пастила">
+      <article class="card reveal" data-cat="Пастила" data-tags="">
+        <div class="ph"><img src="assets/img/p27.jpg" alt="Пастила С черникой"></div>
+        <div class="body">
+          <span class="chip">Пастила</span>
+          <h3>С черникой</h3>
+          <div class="tags"></div>
+          <div class="row"><span class="weight">100 г</span><a class="more" href="#contacts">Запросить</a></div>
+        </div>
+      </article>
+      <article class="card reveal" data-cat="Пастила" data-tags="Подарок">
         <div class="ph"><img src="assets/img/p49.jpg" alt="Пастила В подарочной упаковке"></div>
         <div class="body">
           <span class="chip">Пастила</span>
@@ -105,7 +134,7 @@
           <div class="row"><span class="weight">200 г</span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Пастила">
+      <article class="card reveal" data-cat="Пастила" data-tags="">
         <div class="ph"><img src="assets/img/p50.jpg" alt="Пастила Брусника"></div>
         <div class="body">
           <span class="chip">Пастила</span>
@@ -114,7 +143,7 @@
           <div class="row"><span class="weight">200 г</span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Пастила">
+      <article class="card reveal" data-cat="Пастила" data-tags="">
         <div class="ph"><img src="assets/img/p51.jpg" alt="Пастила Вишня"></div>
         <div class="body">
           <span class="chip">Пастила</span>
@@ -123,7 +152,7 @@
           <div class="row"><span class="weight">200 г</span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Пастила">
+      <article class="card reveal" data-cat="Пастила" data-tags="">
         <div class="ph"><img src="assets/img/p52.jpg" alt="Пастила Кедровый орех"></div>
         <div class="body">
           <span class="chip">Пастила</span>
@@ -132,7 +161,7 @@
           <div class="row"><span class="weight">200 г</span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Пастила">
+      <article class="card reveal" data-cat="Пастила" data-tags="">
         <div class="ph"><img src="assets/img/p53.jpg" alt="Пастила Классическая"></div>
         <div class="body">
           <span class="chip">Пастила</span>
@@ -141,7 +170,7 @@
           <div class="row"><span class="weight">200 г</span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Пастила">
+      <article class="card reveal" data-cat="Пастила" data-tags="">
         <div class="ph"><img src="assets/img/p54.jpg" alt="Пастила Клюква"></div>
         <div class="body">
           <span class="chip">Пастила</span>
@@ -150,7 +179,16 @@
           <div class="row"><span class="weight">200 г</span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Пастила">
+      <article class="card reveal" data-cat="Пастила" data-tags="">
+        <div class="ph"><img src="assets/img/p55.jpg" alt="Пастила Корица"></div>
+        <div class="body">
+          <span class="chip">Пастила</span>
+          <h3>Корица</h3>
+          <div class="tags"></div>
+          <div class="row"><span class="weight">200 г</span><a class="more" href="#contacts">Запросить</a></div>
+        </div>
+      </article>
+      <article class="card reveal" data-cat="Пастила" data-tags="">
         <div class="ph"><img src="assets/img/p56.jpg" alt="Пастила Чёрная смородина"></div>
         <div class="body">
           <span class="chip">Пастила</span>
@@ -159,7 +197,7 @@
           <div class="row"><span class="weight">200 г</span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Пастила">
+      <article class="card reveal" data-cat="Пастила" data-tags="">
         <div class="ph"><img src="assets/img/p57.jpg" alt="Пастила Черника"></div>
         <div class="body">
           <span class="chip">Пастила</span>
@@ -168,7 +206,25 @@
           <div class="row"><span class="weight">200 г</span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Пастила">
+      <article class="card reveal" data-cat="Пастила" data-tags="">
+        <div class="ph"><img src="assets/img/p69.png" alt="Пастила С какао"></div>
+        <div class="body">
+          <span class="chip">Пастила</span>
+          <h3>С какао</h3>
+          <div class="tags"></div>
+          <div class="row"><span class="weight">100 г</span><a class="more" href="#contacts">Запросить</a></div>
+        </div>
+      </article>
+      <article class="card reveal" data-cat="Пастила" data-tags="">
+        <div class="ph"><img src="assets/img/p70.jpg" alt="Пастила С мёдом"></div>
+        <div class="body">
+          <span class="chip">Пастила</span>
+          <h3>С мёдом</h3>
+          <div class="tags"></div>
+          <div class="row"><span class="weight">100 г</span><a class="more" href="#contacts">Запросить</a></div>
+        </div>
+      </article>
+      <article class="card reveal" data-cat="Пастила" data-tags="">
         <div class="ph"><img src="assets/img/p85.png" alt="Пастила Яблочная постная"></div>
         <div class="body">
           <span class="chip">Пастила</span>
@@ -177,7 +233,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Пастила">
+      <article class="card reveal" data-cat="Пастила" data-tags="">
         <div class="ph"><img src="assets/img/p86.jpg" alt="Пастила С алтайским мёдом"></div>
         <div class="body">
           <span class="chip">Пастила</span>
@@ -186,7 +242,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Пастила">
+      <article class="card reveal" data-cat="Пастила" data-tags="">
         <div class="ph"><img src="assets/img/p87.jpg" alt="Пастила С башкирским мёдом"></div>
         <div class="body">
           <span class="chip">Пастила</span>
@@ -195,7 +251,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Пастила">
+      <article class="card reveal" data-cat="Пастила" data-tags="Дикие ягоды">
         <div class="ph"><img src="assets/img/p94.jpg" alt="Пастила С дикой голубикой"></div>
         <div class="body">
           <span class="chip">Пастила</span>
@@ -204,7 +260,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Пастила">
+      <article class="card reveal" data-cat="Пастила" data-tags="Дикие ягоды">
         <div class="ph"><img src="assets/img/p95.jpg" alt="Пастила С дикой клюквой"></div>
         <div class="body">
           <span class="chip">Пастила</span>
@@ -213,7 +269,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Пастила">
+      <article class="card reveal" data-cat="Пастила" data-tags="Дикие ягоды">
         <div class="ph"><img src="assets/img/p96.jpg" alt="Пастила С дикой шикшей"></div>
         <div class="body">
           <span class="chip">Пастила</span>
@@ -222,7 +278,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Пастила" data-sugar="1">
+      <article class="card reveal" data-cat="Пастила" data-tags="Без сахара" data-sugar="1">
         <div class="ph"><img src="assets/img/p97.jpg" alt="Пастила С брусникой"></div>
         <div class="body">
           <span class="chip">Пастила</span>
@@ -231,7 +287,7 @@
           <div class="row"><span class="weight">100 г</span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Пастила" data-sugar="1">
+      <article class="card reveal" data-cat="Пастила" data-tags="Без сахара" data-sugar="1">
         <div class="ph"><img src="assets/img/p98.jpg" alt="Пастила С вишней"></div>
         <div class="body">
           <span class="chip">Пастила</span>
@@ -240,7 +296,7 @@
           <div class="row"><span class="weight">100 г</span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Пастила" data-sugar="1">
+      <article class="card reveal" data-cat="Пастила" data-tags="Без сахара" data-sugar="1">
         <div class="ph"><img src="assets/img/p99.jpg" alt="Пастила Ягодное ассорти"></div>
         <div class="body">
           <span class="chip">Пастила</span>
@@ -249,7 +305,7 @@
           <div class="row"><span class="weight">100 г</span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Пастила" data-sugar="1">
+      <article class="card reveal" data-cat="Пастила" data-tags="Без сахара" data-sugar="1">
         <div class="ph"><img src="assets/img/p100.jpg" alt="Пастила С чёрной смородиной"></div>
         <div class="body">
           <span class="chip">Пастила</span>
@@ -258,7 +314,7 @@
           <div class="row"><span class="weight">100 г</span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Зефир">
+      <article class="card reveal" data-cat="Зефир" data-tags="">
         <div class="ph"><img src="assets/img/p32.jpg" alt="Зефир Черносмородиновый"></div>
         <div class="body">
           <span class="chip">Зефир</span>
@@ -267,7 +323,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Зефир">
+      <article class="card reveal" data-cat="Зефир" data-tags="">
         <div class="ph"><img src="assets/img/p46.jpg" alt="Зефир Ванильный"></div>
         <div class="body">
           <span class="chip">Зефир</span>
@@ -276,7 +332,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Зефир">
+      <article class="card reveal" data-cat="Зефир" data-tags="В глазури">
         <div class="ph"><img src="assets/img/p71.png" alt="Зефир Ванильный"></div>
         <div class="body">
           <span class="chip">Зефир</span>
@@ -285,7 +341,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Зефир">
+      <article class="card reveal" data-cat="Зефир" data-tags="В глазури">
         <div class="ph"><img src="assets/img/p72.png" alt="Зефир Антоновка"></div>
         <div class="body">
           <span class="chip">Зефир</span>
@@ -294,7 +350,16 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Зефир">
+      <article class="card reveal" data-cat="Зефир" data-tags="В глазури">
+        <div class="ph"><img src="assets/img/p73.png" alt="Зефир Кофейный"></div>
+        <div class="body">
+          <span class="chip">Зефир</span>
+          <h3>Кофейный</h3>
+          <div class="tags"><span class="tag tag-plain">В глазури</span></div>
+          <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
+        </div>
+      </article>
+      <article class="card reveal" data-cat="Зефир" data-tags="">
         <div class="ph"><img src="assets/img/p91.JPG" alt="Зефир Антоновка"></div>
         <div class="body">
           <span class="chip">Зефир</span>
@@ -303,7 +368,16 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Зефир">
+      <article class="card reveal" data-cat="Зефир" data-tags="">
+        <div class="ph"><img src="assets/img/p92.JPG" alt="Зефир Зефирное детство"></div>
+        <div class="body">
+          <span class="chip">Зефир</span>
+          <h3>Зефирное детство</h3>
+          <div class="tags"></div>
+          <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
+        </div>
+      </article>
+      <article class="card reveal" data-cat="Зефир" data-tags="">
         <div class="ph"><img src="assets/img/p93.JPG" alt="Зефир Ассорти"></div>
         <div class="body">
           <span class="chip">Зефир</span>
@@ -312,7 +386,16 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Смоква" data-sugar="1">
+      <article class="card reveal" data-cat="Смоква" data-tags="Без сахара" data-sugar="1">
+        <div class="ph"><img src="assets/img/p38.jpg" alt="Смоква Сливовая"></div>
+        <div class="body">
+          <span class="chip">Смоква</span>
+          <h3>Сливовая</h3>
+          <div class="tags"><span class="tag tag-sugar">Без сахара</span></div>
+          <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
+        </div>
+      </article>
+      <article class="card reveal" data-cat="Смоква" data-tags="Без сахара" data-sugar="1">
         <div class="ph"><img src="assets/img/p39.jpg" alt="Смоква Яблочная"></div>
         <div class="body">
           <span class="chip">Смоква</span>
@@ -321,7 +404,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Смоква" data-sugar="1">
+      <article class="card reveal" data-cat="Смоква" data-tags="Без сахара" data-sugar="1">
         <div class="ph"><img src="assets/img/p40.jpg" alt="Смоква Яблочно-абрикосовая"></div>
         <div class="body">
           <span class="chip">Смоква</span>
@@ -330,7 +413,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Смоква" data-sugar="1">
+      <article class="card reveal" data-cat="Смоква" data-tags="Без сахара" data-sugar="1">
         <div class="ph"><img src="assets/img/p41.jpg" alt="Смоква Яблочно-сливовая"></div>
         <div class="body">
           <span class="chip">Смоква</span>
@@ -339,7 +422,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Смоква" data-sugar="1">
+      <article class="card reveal" data-cat="Смоква" data-tags="Без сахара" data-sugar="1">
         <div class="ph"><img src="assets/img/p66.jpg" alt="Смоква Брусничная"></div>
         <div class="body">
           <span class="chip">Смоква</span>
@@ -348,7 +431,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Смоква" data-sugar="1">
+      <article class="card reveal" data-cat="Смоква" data-tags="Без сахара" data-sugar="1">
         <div class="ph"><img src="assets/img/p67.jpg" alt="Смоква Клюквенная"></div>
         <div class="body">
           <span class="chip">Смоква</span>
@@ -357,7 +440,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Смоква" data-sugar="1">
+      <article class="card reveal" data-cat="Смоква" data-tags="Без сахара|Новинка" data-sugar="1">
         <div class="ph"><img src="assets/img/p74.jpg" alt="Смоква Яблочно-тыквенная"></div>
         <div class="body">
           <span class="chip">Смоква</span>
@@ -366,7 +449,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Смоква" data-sugar="1">
+      <article class="card reveal" data-cat="Смоква" data-tags="Без сахара|Новинка" data-sugar="1">
         <div class="ph"><img src="assets/img/p75.jpg" alt="Смоква Яблочно-облепиховая"></div>
         <div class="body">
           <span class="chip">Смоква</span>
@@ -375,7 +458,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Пастилки">
+      <article class="card reveal" data-cat="Пастилки" data-tags="">
         <div class="ph"><img src="assets/img/p109.png" alt="Пастилки Ягодное ассорти"></div>
         <div class="body">
           <span class="chip">Пастилки</span>
@@ -384,7 +467,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Пастилки">
+      <article class="card reveal" data-cat="Пастилки" data-tags="">
         <div class="ph"><img src="assets/img/p113.png" alt="Пастилки Яблочная"></div>
         <div class="body">
           <span class="chip">Пастилки</span>
@@ -393,7 +476,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Меренга" data-sugar="1">
+      <article class="card reveal" data-cat="Меренга" data-tags="Без сахара" data-sugar="1">
         <div class="ph"><img src="assets/img/p115.jpg" alt="Меренга Ягодное ассорти"></div>
         <div class="body">
           <span class="chip">Меренга</span>
@@ -402,7 +485,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Меренга" data-sugar="1">
+      <article class="card reveal" data-cat="Меренга" data-tags="Без сахара" data-sugar="1">
         <div class="ph"><img src="assets/img/p117.jpg" alt="Меренга Классическая"></div>
         <div class="body">
           <span class="chip">Меренга</span>
@@ -411,7 +494,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Сухарики">
+      <article class="card reveal" data-cat="Сухарики" data-tags="">
         <div class="ph"><img src="assets/img/p42.jpg" alt="Сухарики Классические"></div>
         <div class="body">
           <span class="chip">Сухарики</span>
@@ -420,7 +503,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Сухарики">
+      <article class="card reveal" data-cat="Сухарики" data-tags="">
         <div class="ph"><img src="assets/img/p43.jpg" alt="Сухарики С брусникой"></div>
         <div class="body">
           <span class="chip">Сухарики</span>
@@ -429,7 +512,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Сухарики">
+      <article class="card reveal" data-cat="Сухарики" data-tags="">
         <div class="ph"><img src="assets/img/p44.jpg" alt="Сухарики С клюквой"></div>
         <div class="body">
           <span class="chip">Сухарики</span>
@@ -438,7 +521,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Сухарики">
+      <article class="card reveal" data-cat="Сухарики" data-tags="">
         <div class="ph"><img src="assets/img/p45.jpg" alt="Сухарики С черникой"></div>
         <div class="body">
           <span class="chip">Сухарики</span>
@@ -447,7 +530,7 @@
           <div class="row"><span class="weight"></span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Батончики" data-sugar="1">
+      <article class="card reveal" data-cat="Батончики" data-tags="Без сахара" data-sugar="1">
         <div class="ph"><img src="assets/img/p119.png" alt="Батончики Ягодный"></div>
         <div class="body">
           <span class="chip">Батончики</span>
@@ -456,7 +539,7 @@
           <div class="row"><span class="weight">35 г</span><a class="more" href="#contacts">Запросить</a></div>
         </div>
       </article>
-      <article class="card reveal" data-cat="Батончики" data-sugar="1">
+      <article class="card reveal" data-cat="Батончики" data-tags="Без сахара" data-sugar="1">
         <div class="ph"><img src="assets/img/p120.png" alt="Батончики Яблочный"></div>
         <div class="body">
           <span class="chip">Батончики</span>
@@ -466,6 +549,7 @@
         </div>
       </article>
     </div>
+
     <div class="catalog-cta">
       <div>
         <b>Цены и наличие — по запросу.</b>
@@ -572,10 +656,11 @@
       </div>
       <div>
         <form onsubmit="event.preventDefault(); this.reset(); document.getElementById('sent').hidden=false;">
-          <input type="text" placeholder="Имя" required>
-          <input type="tel" placeholder="Телефон или почта" required>
-          <textarea rows="4" placeholder="Вопрос: опт, СТМ, сотрудничество"></textarea>
+          <input type="text" name="name" placeholder="Имя" aria-label="Имя" required>
+          <input type="text" name="contact" placeholder="Телефон или почта" aria-label="Телефон или почта" required>
+          <textarea rows="4" name="message" placeholder="Вопрос: опт, СТМ, сотрудничество" aria-label="Сообщение"></textarea>
           <button class="btn btn-primary" type="submit">Отправить запрос</button>
+          <p style="font-size:.8rem; color:var(--muted); margin:0">Отвечаем в рабочее время: пн–пт, 9:00–19:00.</p>
           <p id="sent" hidden style="color:var(--apple); font-size:.86rem">Спасибо! Мы свяжемся с вами в рабочее время.</p>
         </form>
       </div>

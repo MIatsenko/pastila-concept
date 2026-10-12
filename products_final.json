@@ -1,5 +1,15 @@
 [
  {
+  "id": 21,
+  "type": "Пастила",
+  "name": "С чёрной смородиной",
+  "weight": "180 г",
+  "badges": [
+   "Без сахара"
+  ],
+  "img": "assets/img/p21.png"
+ },
+ {
   "id": 22,
   "type": "Пастила",
   "name": "С черникой",
@@ -18,6 +28,14 @@
    "Без сахара"
   ],
   "img": "assets/img/p23.jpg"
+ },
+ {
+  "id": 27,
+  "type": "Пастила",
+  "name": "С черникой",
+  "weight": "100 г",
+  "badges": [],
+  "img": "assets/img/p27.jpg"
  },
  {
   "id": 49,
@@ -70,6 +88,14 @@
   "img": "assets/img/p54.jpg"
  },
  {
+  "id": 55,
+  "type": "Пастила",
+  "name": "Корица",
+  "weight": "200 г",
+  "badges": [],
+  "img": "assets/img/p55.jpg"
+ },
+ {
   "id": 56,
   "type": "Пастила",
   "name": "Чёрная смородина",
@@ -84,6 +110,22 @@
   "weight": "200 г",
   "badges": [],
   "img": "assets/img/p57.jpg"
+ },
+ {
+  "id": 69,
+  "type": "Пастила",
+  "name": "С какао",
+  "weight": "100 г",
+  "badges": [],
+  "img": "assets/img/p69.png"
+ },
+ {
+  "id": 70,
+  "type": "Пастила",
+  "name": "С мёдом",
+  "weight": "100 г",
+  "badges": [],
+  "img": "assets/img/p70.jpg"
  },
  {
   "id": 85,
@@ -216,6 +258,16 @@
   "img": "assets/img/p72.png"
  },
  {
+  "id": 73,
+  "type": "Зефир",
+  "name": "Кофейный",
+  "weight": "",
+  "badges": [
+   "В глазури"
+  ],
+  "img": "assets/img/p73.png"
+ },
+ {
   "id": 91,
   "type": "Зефир",
   "name": "Антоновка",
@@ -224,12 +276,30 @@
   "img": "assets/img/p91.JPG"
  },
  {
+  "id": 92,
+  "type": "Зефир",
+  "name": "Зефирное детство",
+  "weight": "",
+  "badges": [],
+  "img": "assets/img/p92.JPG"
+ },
+ {
   "id": 93,
   "type": "Зефир",
   "name": "Ассорти",
   "weight": "",
   "badges": [],
   "img": "assets/img/p93.JPG"
+ },
+ {
+  "id": 38,
+  "type": "Смоква",
+  "name": "Сливовая",
+  "weight": "",
+  "badges": [
+   "Без сахара"
+  ],
+  "img": "assets/img/p38.jpg"
  },
  {
   "id": 39,
