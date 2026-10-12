@@ -44,8 +44,9 @@ header.site{position:sticky; top:0; z-index:60; background:rgba(250,244,234,.94)
   backdrop-filter:saturate(1.4) blur(14px); border-bottom:1px solid var(--line)}
 .nav{display:flex; align-items:center; justify-content:space-between; gap:1rem; min-height:74px}
 .brand{display:flex; align-items:center; gap:.7rem}
-.brand .mark{width:40px; height:40px; border-radius:50%; background:var(--ink); color:#F3E4CB;
-  display:grid; place-items:center; font-family:var(--serif); font-size:1.15rem; flex:none}
+.brand .mark{min-width:46px; height:40px; padding:0 .5rem; border-radius:12px; background:var(--ink);
+  color:#F3E4CB; display:grid; place-items:center; font-family:var(--serif); font-size:1.04rem;
+  letter-spacing:.4px; flex:none}
 .brand b{display:block; font-family:var(--serif); font-size:1.16rem; line-height:1.12;
   letter-spacing:.1px; text-transform:none}
 .brand span{display:block; font-size:.7rem; letter-spacing:.18em; text-transform:uppercase; color:var(--muted)}
@@ -221,7 +222,7 @@ footer h4{color:#F1E3CF; font-size:1rem; margin-bottom:.7rem; font-family:var(--
   .brand{gap:.55rem}
   .brand > span > span{display:none}
   .brand b{font-size:1rem; line-height:1.15}
-  .brand .mark{width:34px; height:34px; font-size:.95rem}
+  .brand .mark{min-width:40px; height:32px; padding:0 .4rem; border-radius:10px; font-size:.9rem}
   .lang button{padding:.28rem .5rem}
   .hero .inner{padding-top:2.6rem; padding-bottom:2.4rem}
   section[id],.hero[id]{scroll-margin-top:76px}

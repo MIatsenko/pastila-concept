@@ -1,4 +1,4 @@
-/* Демо-концепция: меню, фильтр каталога, переключение языка, появление блоков */
+/* Меню, фильтр каталога, переключение языка, появление блоков */
 (() => {
   const $  = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -43,7 +43,7 @@
     document.querySelector('#tabs .tab-sugar')?.click();
   });
 
-  /* --- смена языка (рабочий пример для RU/EN) --- */
+  /* --- смена языка --- */
   const T = {
     ru: {
       nav_history: 'Производство', nav_catalog: 'Продукция', nav_awards: 'Награды',
@@ -52,7 +52,7 @@
       hero_p: 'Белёвская пастила создаётся исключительно вручную из сочных антоновских яблок по неизменной технологии: нежнейшее яблочное пюре, яичный белок и цельные ягоды, орехи или корица. Мастера по сей день готовят её в русской печи, построенной в XIX веке.',
       hero_cta1: 'Смотреть продукцию', hero_cta2: 'Опт и СТМ',
       cat_eyebrow: 'Продукция', cat_h2: 'Ассортимент мануфактуры',
-      cat_lead: 'Разделено по типам продукта — пастила, зефир, смоква, пастилки, меренга, сухарики, батончики. Важное при выборе вынесено в метки: «Без сахара», «Новинка», «Дикие ягоды». Ниже — реальные позиции с фотографиями производителя.',
+      cat_lead: 'Разделено по типам продукта — пастила, зефир, смоква, пастилки, меренга, сухарики, батончики. Важное при выборе вынесено в метки: «Без сахара», «Новинка», «Дикие ягоды».',
       hist_eyebrow: 'Производство', hist_h2: 'Рецепт, которому 145 лет',
       aw_eyebrow: 'Признание', aw_h2: 'Награды и качество'
     },
@@ -63,7 +63,7 @@
       hero_p: 'Belev pastila is made entirely by hand from juicy Antonovka apples, following an unchanged recipe: the finest apple puree, egg white and whole berries, nuts or cinnamon. To this day the craftsmen dry it in the Russian stove built in the 19th century.',
       hero_cta1: 'Browse products', hero_cta2: 'Wholesale & OEM',
       cat_eyebrow: 'Products', cat_h2: 'The manufactory range',
-      cat_lead: 'Grouped by product type: pastila, zefir, smokva, pastilles, meringue, rusks and bars. What matters at a glance is shown as labels: no added sugar, new, wild berries. Below — real products with the maker\u2019s own photography.',
+      cat_lead: 'Grouped by product type: pastila, zefir, smokva, pastilles, meringue, rusks and bars. What matters at a glance is shown as labels: no added sugar, new, wild berries.',
       hist_eyebrow: 'Production', hist_h2: 'A recipe that is 145 years old',
       aw_eyebrow: 'Recognition', aw_h2: 'Awards and quality'
     }
