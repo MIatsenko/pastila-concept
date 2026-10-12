@@ -115,6 +115,7 @@ section[id],.hero[id]{scroll-margin-top:92px}
 .filters .tabs{margin:0}
 .fresult{margin:0; font-size:.86rem; color:var(--muted); display:flex; align-items:center; gap:.6rem; flex-wrap:wrap}
 .fresult b{color:var(--ink)}
+.fempty{margin:.2rem 0 0; font-size:.88rem; color:var(--terra)}
 #reset{border:1px solid var(--line); background:#fff; border-radius:100px; padding:.28rem .75rem;
   font:inherit; font-size:.76rem; color:var(--terra); cursor:pointer}
 #reset:hover{border-color:var(--terra)}

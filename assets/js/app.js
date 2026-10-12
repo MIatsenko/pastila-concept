@@ -17,7 +17,7 @@
   /* --- фильтр каталога: тип продукта + метки, сочетаются (И) --- */
   const typeChips = $$('#tabs-type button'), tagChips = $$('#tabs-tag button');
   const cards = $$('#cards .card');
-  const found = $('#found'), foundWord = $('#foundWord'), reset = $('#reset');
+  const found = $('#found'), foundWord = $('#foundWord'), reset = $('#reset'), empty = $('#empty');
   const grid = $('#cards'), catalog = $('#catalog');
   const state = { type: '*', tag: null };
 
@@ -44,6 +44,7 @@
     found.textContent = shown;
     foundWord.textContent = plural(shown);
     reset.hidden = state.type === '*' && !state.tag;
+    empty.hidden = shown !== 0;
     typeChips.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.type === state.type)));
     tagChips.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.tag === state.tag)));
     if (keepScroll && grid.getBoundingClientRect().top < 0) {
